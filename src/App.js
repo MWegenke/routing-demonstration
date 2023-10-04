@@ -1,5 +1,6 @@
 import React from 'react';
 import {Routes, Route, Link, useNavigate} from 'react-router-dom'
+import {Marines} from './marines'
 
 
 const Navy = () => (
@@ -30,6 +31,9 @@ export const App = () => {
       <li>
         <Link to='/usaf'>USAF</Link>
       </li>
+      <li>
+        <Link to='/marines'>Marines</Link>
+      </li>
     </ul>
     <button onClick={() => {navigate('/')}}>HOME</button>
   <Routes>
@@ -37,6 +41,7 @@ export const App = () => {
     <Route path='/navy' element={<Navy />} />
     <Route path='/ussf' element={<Ussf />} />
     <Route path='/usaf' element={<Usaf />} />
+    <Route path='/marines' element={<Marines />} />
   </Routes>
   </>
   )
