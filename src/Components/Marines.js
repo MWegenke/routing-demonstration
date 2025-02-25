@@ -5,4 +5,4 @@ const Styledh1 = styled.h1`
   color: red;
   background-color: blue;
 `
-export const Marines = () => <Styledh1>Marines rule</Styledh1>
+export const Marines = () => <Styledh1>O'Doyle Rules!</Styledh1>
